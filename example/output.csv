@@ -1,0 +1,16 @@
+﻿group,name,cnt
+fib simple,fib 1,
+fib simple,,1
+fib calc,fib 2,
+fib calc,fib 3,
+fib calc,fib 4,
+fib calc,fib 5,
+fib calc,,4
+fib big,fib 10,
+fib big,fib 20,
+fib big,,2
+fib illegal,fib 0,
+fib illegal,fib -1,
+fib illegal,,2
+all,,9
+
