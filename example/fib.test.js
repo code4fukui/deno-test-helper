@@ -27,6 +27,9 @@ Deno.test("fib big", async (_t) => {
   await _t.step("fib 20", async () => {
     t.assertEquals(fib(20), 6765);
   });
+  await _t.step("fib 40", async () => {
+    t.assertEquals(fib(40), 102334155);
+  });
 });
 Deno.test("fib illegal", async (_t) => {
   await _t.step("fib 0", async () => {

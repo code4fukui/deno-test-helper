@@ -63,7 +63,7 @@ deno test -A --unstable example/fib.test.js | deno run test2csv.js
 options:
 --help     this message
 --nosum    without sum
---withtime with time(ms)
+--notime   without time(ms)
 --json     output json instead of csv`);
   Deno.exit(0);
 }
@@ -80,8 +80,7 @@ const output = await Deno.readTextFile("output.txt");
 */
 let data = test2csv(output);
 
-if (Deno.args.indexOf("--withtime") >= 0) {
-} else {
+if (Deno.args.indexOf("--notime") >= 0) {
   data.forEach(d => delete d.time);
 }
 if (Deno.args.indexOf("--nosum") >= 0) {
