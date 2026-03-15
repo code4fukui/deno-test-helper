@@ -1,5 +1,7 @@
 # deno-test-helper
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A helper tool to generate CSV output from Deno test results.
 
 ## Features
