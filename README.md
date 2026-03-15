@@ -1,24 +1,38 @@
 # deno-test-helper
 
-output CSV from Deno with test multi levels
+A helper tool to generate CSV output from Deno test results.
 
-## to run
+## Features
+- Parses Deno test output and generates CSV or JSON
+- Supports multi-level test groups
+- Includes summary information (total tests, pass/fail counts)
+- Provides optional output formatting flags (no summary, no time, JSON output)
+
+## Requirements
+- Deno runtime (version 1.x or later)
+
+## Usage
+
+To run the tests and generate CSV output:
 
 ```
 deno test -A --unstable example/fib.test.js | deno run https://code4fukui.github.io/deno-test-helper/test2csv.js
 ```
 
-## run local
+To run locally:
 
 ```
 deno test -A --unstable example/fib.test.js | deno run test2csv.js
 ```
 
-## options
+Options:
 
 ```
---help     this message
---nosum    without sum
---withtime with time(ms)
---json     output json instead of csv
+--help     Show this help message
+--nosum    Omit summary information
+--notime   Omit test duration
+--json     Output JSON instead of CSV
 ```
+
+## License
+MIT
